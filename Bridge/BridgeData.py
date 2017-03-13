@@ -9,12 +9,11 @@ def initBridge():
     try: 
         print "waiting for attach..."
         bridge.waitForAttach(10000)
+        bridge.setEnabled(0, True)
         print "bridge attached!"
     except PhidgetException:
         print "attach failed."
         bridge.closePhidget()
-
-    bridge.setEnabled(0, True)
 
 def closeBridge():
     bridge.closePhidget()
@@ -35,6 +34,6 @@ def outputData(name, sample, number, index):
     for i in data:
         string += str(i) + '\n'
 
-    header = "sample rate:  %f\nsamples:      %i\nindex:        %i\n-------------------\n" % (sample, number, index)
+    header = "sample rate:  %fs\nsamples:      %i\nindex:        %i\n-------------------\n" % (sample, number, index)
     text_file.write(header + string)
     text_file.close()
