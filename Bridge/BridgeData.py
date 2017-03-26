@@ -26,7 +26,7 @@ def getData(sample, number, index):
 
     return acc
 
-def outputData(name, sample, number, index):
+def outputData(descr, name, sample, number, index):
     data = getData(sample, number, index)
     text_file = open(name, "w")
 
@@ -35,5 +35,5 @@ def outputData(name, sample, number, index):
         string += str(i) + '\n'
 
     header = "sample rate:  %fs\nsamples:      %i\nindex:        %i\n-------------------\n" % (sample, number, index)
-    text_file.write(header + string)
+    text_file.write(descr+'\n\n'+header + string)
     text_file.close()
