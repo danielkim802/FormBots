@@ -51,7 +51,7 @@ void forward() {
   digitalWrite(n1, LOW);
   digitalWrite(n2, HIGH);  
 
-  delayMicroseconds(500);
+  delayMicroseconds(250);
 
   digitalWrite(p1, LOW);
   digitalWrite(p2, LOW);

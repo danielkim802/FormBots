@@ -1,4 +1,4 @@
-400us, 175 coils, 2.5Vmotor
+500us, 175 coils, 2.5Vmotor
 
 sample rate:  0.100000s
 samples:      60

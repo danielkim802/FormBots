@@ -1,4 +1,4 @@
-400us, 175 coils, 2.5Vmotor, unsanded
+500us, 175 coils, 2.5Vmotor, unsanded
 
 sample rate:  0.100000s
 samples:      60
